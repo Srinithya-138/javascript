@@ -33,4 +33,6 @@ console.log( "h&&i is ",h&&i);
 console.log( "h||i is ",h||i);
 console.log("!(5<3)",!(5<3));
 
-
+let age =18;
+let res=age>=18?"adult":"not adult";
+console.log(res);
