@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: black;
+            width:100px;
+            height:100px;
+            /* create animation effect */
+            transition: 2s;
+        }
+        .widthmax{
+            width:900px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" >
+
+    </div>
+    <button onclick="change()">change color</button>
+    <script>
+        //select box
+        var box=document.getElementById("box")
+        function change(){
+            box.style.backgroundColor="red"
+            box.setAttribute("class","widthmax")
+        }
+
+    </script>
+</body>
+</html>

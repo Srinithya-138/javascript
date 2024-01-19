@@ -6,17 +6,26 @@
     <title>Dom</title>
 </head>
 <body>
-   <input id="one" value="34">
-   <input id="two" value="34"> 
-   <button>add</button>
-   <p>result</p>
+   <input id="one" >
+   <input id="two" > 
+   <button onclick="resultFun()">add</button>
+   <p id="result">result</p>
    <script>
     //select input box-1
     var b1=document.getElementById("one")
     var b2=document.getElementById("two")
     var result=document.getElementById("result")
-    var result
-    console.log(one.value)
+  
+    function resultFun(){
+        //converting to number else it wrk as string
+    var b1value=Number(b1.value)
+    var b2value=Number(b2.value)
+    //adding the value
+    var total=b1value+b2value
+        result.textContent=total
+    }
+    
+    // console.log(total)
    </script>
 </body>
 </html>
