@@ -18,7 +18,8 @@
     </style>
 </head>
 <body>
-    <div id="box" >
+    <div id="box" > 
+         <!-- <div id="box" class="widthmax"></div> this class adds thewidth of 900px  -->
 
     </div>
     <button onclick="change()">change color</button>
@@ -26,8 +27,8 @@
         //select box
         var box=document.getElementById("box")
         function change(){
-            box.style.backgroundColor="red"
-            box.setAttribute("class","widthmax")
+            box.style.backgroundColor="red"//in js bgcolor spelling is different
+            box.setAttribute("class","widthmax")//we are adding class attribute in the function it will work as above commented line
         }
 
     </script>

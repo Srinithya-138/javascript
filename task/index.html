@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="one">
+        Hello
+    </div>
+    <div class="one">world</div>
+    <h1>javascript</h1>
+    <h1>programming</h1>
+    <script>
+        //select div with class name 
+        let di=document.querySelector(".one") 
+        console.log(di) 
+        //if we have two tag in the same name then 1 st one will be selected
+        let js=document.querySelector("h1")
+        console.log(js) 
+        //selecting all tag with class name
+        let select=document.querySelectorAll(".one")  
+        console.log(select) 
+        console.log(select[0])  
+        console.log(select[1])
+        
+        for(count=0;count<select.length;count++){
+            console.log(select[count].textContent)
+        }   
+    </script>
+</body>
+</html>

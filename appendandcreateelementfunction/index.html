@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="update()">add</button>
+    <div id="result">
+
+    </div>
+
+    <script>
+        //select h1
+        let div=document.getElementById("result")
+
+        function update(){
+            
+            //create new element it creates <h1><h1>
+            let listitem=document.createElement("h1") 
+            //then appending the h1 tag  <h1>hello<h1>
+            listitem.textContent="hello"
+            div.append(listitem)
+
+        }
+    </script>
+</body>
+</html>

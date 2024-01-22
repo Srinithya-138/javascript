@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="result">result</h1>
+    <button onclick="update(event)">name</button>
+    <button onclick="update(event)">class</button>
+    <button onclick="update(event)">subject</button>
+
+    <script>
+        //select h1 because it has to change and manipulate
+        let h1=document.getElementById("result")
+        function update(event){
+            // console.log(event.target.textContent)
+            h1.textContent=event.target.textContent
+
+
+        }
+    </script>
+</body>
+</html>
