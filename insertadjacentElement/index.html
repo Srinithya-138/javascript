@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>sri</h1>
+        <h1>nithya</h1>
+    </div>
+
+    <script>
+        let hevar =document.querySelector("div")
+        hevar.append("hello")//this adds hello  after the tag ,but hello is not tag it adds as it is 
+        hevar.append("world")//this adds after the tag
+        hevar.prepend("hi")//this adds before the tag
+        let h1=document.createElement("h1")
+        h1.textContent="example"
+        // hevar.insertAdjacentElement("beforebegin",h1)//this create h1 tag before the div tag 
+        // hevar.insertAdjacentElement("afterbegin",h1)//this create the element at first  inside the div tag
+        // hevar.insertAdjacentElement("beforeend",h1)//this create the element at the last inside the div tag 
+        hevar.insertAdjacentElement("afterend",h1)//this create h1 tag after the div tag 
+    </script>
+</body>
+</html> 
